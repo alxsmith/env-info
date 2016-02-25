@@ -8,7 +8,7 @@ output: html_document
 ```{r setup, echo=F}
 # NOTE: This chunk sets the default to eval=F for all following chunks.
 #       Am just using this for instructions. Please exclude in your assignment to see all results.
-knitr::opts_chunk$set(eval=FALSE)
+knitr::opts_chunk$set(eval=F)
 ```
 
 ## Precursors
@@ -47,20 +47,20 @@ Brought some of these stickers for ya:
 
 So far to turn in individual assignments, you've been editing `env-info/students/<user>.Rmd` and knitting to `env-info/students/<user>.html`. Then you push to your repo `<user>/env-info` before submitting to the course repo `ucsb-bren/env-info` with a push, and pull request. To update your `<user>/env-info` with the latest from `ucsb-bren/env-info`, you also need to do an additional pull request, merge, and pull. 
 
-| repo location | `<user>` permission | initialize <i class="fa fa-arrow-down"></i> | edit <i class="fa fa-arrow-up"></i> | update <i class="fa fa-arrow-down"></i> |
-|---------------|:-------------------:|:-------------------------------------------:|:-----------------------------------:|:---------------------------------------:|  
-| <i class="fa fa-cloud"></i> `github.com/ucsb-bren/env-info` | read only |  | [**merge**](https://help.github.com/articles/merging-a-pull-request) <span class="octicon octicon-git-merge"></span> [BB]  | |
-| <i class="fa fa-cloud"></i> `github.com/<user>/env-info`    | read + write | [**fork**](https://help.github.com/articles/fork-a-repo) <span class="octicon octicon-repo-forked"></span> | [**pull request**](https://help.github.com/articles/creating-a-pull-request/) <span class="octicon octicon-git-pull-request"></span> | [**pull request**](https://help.github.com/articles/creating-a-pull-request/) <span class="octicon octicon-git-pull-request"></span>, [**merge**](https://help.github.com/articles/merging-a-pull-request) <span class="octicon octicon-git-merge"></span> |
-| <i class="fa fa-desktop"></i> `~/localdir/<user>.github.io` | read + write | [**clone**](https://help.github.com/articles/fetching-a-remote) <span class="octicon octicon-desktop-download"></span> | [**commit**](http://git-scm.com/docs/git-commit) <span class="octicon octicon-git-commit"></span>,  [**push**](https://help.github.com/articles/pushing-to-a-remote/) <span class="octicon octicon-cloud-upload"></span> | [**pull**](https://help.github.com/articles/fetching-a-remote/#pull) <span class="octicon octicon-cloud-download"></span> |
+repo location | `<user>` permission | initialize <i class="fa fa-arrow-down"></i> | edit <i class="fa fa-arrow-up"></i> | update <i class="fa fa-arrow-down"></i>
+-----------|:-----------:|:-----------:|:-----------:|:-----------:
+<i class="fa fa-cloud"></i> `github.com/ucsb-bren/env-info` | read only |  | [**merge**](https://help.github.com/articles/merging-a-pull-request) <span class="octicon octicon-git-merge"></span> [BB]  | 
+<i class="fa fa-cloud"></i> `github.com/<user>/env-info`    | read + write | [**fork**](https://help.github.com/articles/fork-a-repo) <span class="octicon octicon-repo-forked"></span> | [**pull request**](https://help.github.com/articles/creating-a-pull-request/) <span class="octicon octicon-git-pull-request"></span> | [**pull request**](https://help.github.com/articles/creating-a-pull-request/) <span class="octicon octicon-git-pull-request"></span>, [**merge**](https://help.github.com/articles/merging-a-pull-request) <span class="octicon octicon-git-merge"></span>
+<i class="fa fa-desktop"></i> `~/localdir/<user>.github.io` | read + write | [**clone**](https://help.github.com/articles/fetching-a-remote) <span class="octicon octicon-desktop-download"></span> | [**commit**](http://git-scm.com/docs/git-commit) <span class="octicon octicon-git-commit"></span>,  [**push**](https://help.github.com/articles/pushing-to-a-remote/) <span class="octicon octicon-cloud-upload"></span> | [**pull**](https://help.github.com/articles/fetching-a-remote/#pull) <span class="octicon octicon-cloud-download"></span>
 
 #### NEW
 
 For future assignments, you'll use a much simpler Github workflow with less possibilities for [merge conflicts](http://r-pkgs.had.co.nz/git.html#git-pull):
 
-| repo location | `<user>` permission | initialize <i class="fa fa-arrow-down"></i> | edit <i class="fa fa-arrow-up"></i> | update <i class="fa fa-arrow-down"></i> |
-|---------------|:-------------------:|:----------:|:----:|:------:|  
-| <i class="fa fa-cloud"></i> `github.com/<user>/<user>.github.io` | read + write | [**create**](https://help.github.com/articles/create-a-repo/) <span class="octicon octicon-plus"></span> |   |   |
-| <i class="fa fa-desktop"></i> `~/localdir/<user>.github.io`      | read + write | [**clone**](https://help.github.com/articles/fetching-a-remote) <span class="octicon octicon-desktop-download"></span> | [**commit**](http://git-scm.com/docs/git-commit) <span class="octicon octicon-git-commit"></span>,  [**push**](https://help.github.com/articles/pushing-to-a-remote/) <span class="octicon octicon-cloud-upload"></span> | [**pull**](https://help.github.com/articles/fetching-a-remote/#pull) <span class="octicon octicon-cloud-download"></span> |
+repo location | `<user>` permission | initialize <i class="fa fa-arrow-down"></i> | edit <i class="fa fa-arrow-up"></i> | update <i class="fa fa-arrow-down"></i>
+-----------|:-----------:|:-----------:|:-----------:|:-----------:
+<i class="fa fa-cloud"></i> `github.com/<user>/<user>.github.io` | read + write | [**create**](https://help.github.com/articles/create-a-repo/) <span class="octicon octicon-plus"></span> |   |
+<i class="fa fa-desktop"></i> `~/localdir/<user>.github.io`      | read + write | [**clone**](https://help.github.com/articles/fetching-a-remote) <span class="octicon octicon-desktop-download"></span> | [**commit**](http://git-scm.com/docs/git-commit) <span class="octicon octicon-git-commit"></span>,  [**push**](https://help.github.com/articles/pushing-to-a-remote/) <span class="octicon octicon-cloud-upload"></span> | [**pull**](https://help.github.com/articles/fetching-a-remote/#pull) <span class="octicon octicon-cloud-download"></span>
 
 Similar to your class group project repo `<org>/<org>.github.io` which serves a web site at `http://<org>.github.io`, you want to initialize:
 
@@ -84,7 +84,7 @@ Again, it is important that you use the exact spelling above. Otherwise, we won'
 
 ## joining data
 
-For this portion of the individual assignment, similar to last week, you'll find it easiest to copy and paste from `## joining data` onwards in  [`env-info/wk05_joining.Rmd`](https://raw.githubusercontent.com/ucsb-bren/env-info/gh-pages/wk05_joining.Rmd) to your `env-info_hw/wk05_ggplot.Rmd`. Then you can play with different chunks of the code. Please be sure to answer all tasks and questions at the bottom.
+For this portion of the individual assignment, similar to last week, you'll find it easiest to copy and paste from `## joining data` onwards in  [`env-info/wk05_joining.Rmd`](https://raw.githubusercontent.com/ucsb-bren/env-info/gh-pages/wk05_joining.Rmd) to your `<user>.github.io/env-info_hw/wk05_ggplot.Rmd`. Then you can play with different chunks of the code. Please be sure to answer all tasks and questions at the bottom.
 
 The R chunks explaining the `dplyr` join functions below are pulled from the excellent [**wrangling-webinar.pdf**](wk03_dplyr/wrangling-webinar.pdf) presentation, which you should consult as you execute (see shortcuts in [rstudio-IDE-cheatsheet.pdf](refs/cheatsheets/rstudio-IDE-cheatsheet.pdf)). 
 
@@ -108,21 +108,30 @@ if (basename(getwd()) != wd){
 
 ### `bind_cols`
 
+bind columns between data frames
+
 ```{r bind_cols}
-y = data.frame(
-  x1 = c('A','B','C'), 
-  x2 = c( 1 , 2 , 3), 
-  stringsAsFactors=F)
-z = data.frame(
-  x1 = c('B','C','D'), 
-  x2 = c( 2 , 3 , 4), 
-  stringsAsFactors=F)
+library(readr)
+library(dplyr)
+
+y = read_csv(
+'x1,x2
+A,1
+B,2
+C,3')
+z = read_csv(
+'x1,x2
+B,2
+C,3
+D,4')
 y
 z
 bind_cols(y, z)
 ```
 
 ### `bind_rows`
+
+bind rows of data frames
 
 ```{r bind_rows}
 y
@@ -132,6 +141,8 @@ bind_rows(y, z)
 
 ### `union`
 
+set operation on data frames, returning all unique rows
+
 ```{r union}
 y
 z
@@ -139,6 +150,8 @@ union(y, z)
 ```
 
 ### `intersect`
+
+set operation on data frames, returning those rows in common
 
 ```{r intersect}
 y
@@ -148,6 +161,8 @@ intersect(y, z)
 
 ### `setdiff`
 
+set operation on data frames, returning all mismatched rows
+
 ```{r setdiff}
 y
 z
@@ -156,19 +171,29 @@ setdiff(y, z)
 
 ### `left_join`
 
+return all rows from x, and all columns from x and y. Rows in x with no match in y will have NA values in the new columns.
+
 ```{r left_join}
-songs = data.frame(
-  song = c('Across the Universe','Come Together', 'Hello, Goodbye', 'Peggy Sue'),
-  name = c('John','John','Paul','Buddy'), 
-  stringsAsFactors=F)
-artists = data.frame(
-  name = c('George','John','Paul','Ringo'),
-  plays = c('sitar','guitar','bass','drums'), 
-  stringsAsFactors=F)
+artists = read_csv(
+'name,plays
+George,sitar
+John,guitar
+Paul,bass
+Ringo,drums')
+songs = read_csv(
+'song,name
+Across the Universe,John
+Come Together,John
+"Hello, Goodbye",Paul
+Peggy Sue,Buddy')
+artists
+songs
 left_join(songs, artists, by='name')
 ```
 
 ### `inner_join`
+
+return all rows from x where there are matching values in y, and all columns from x and y
 
 ```{r inner_join}
 inner_join(songs, artists, by = "name")
@@ -176,11 +201,15 @@ inner_join(songs, artists, by = "name")
 
 ### `semi_join`
 
+return all rows from x where there are matching values in y, keeping just columns from x
+
 ```{r semi_join}
 semi_join(songs, artists, by = "name")
 ```
 
 ### `anti_join`
+
+return all rows from x where there are not matching values in y, keeping just columns from x
 
 ```{r anti_join}
 anti_join(songs, artists, by = "name")
@@ -190,26 +219,101 @@ anti_join(songs, artists, by = "name")
 
 You'll join the [population](http://data.okfn.org/data/core/population) dataset to calculate per capita CO<sub>2</sub> emissions.
 
-_**Task**. Summarize the total emissions by country  (not World or EU28) per capita across years from your long format table and return the top 5 emitting countries for **2014**._
+_**Task**. Calculate the per capita emissions by country (not World or EU28) and return the top 5 emitting countries for **2014**._
 
-_**Task**. Summarize the total emissions by country (not World or EU28) per capita across years from your long format table and return the top 5 emitting countries on **average** across all years._ 
+_**Task**. Summarize the per capita emissions by country (not World or EU28) as the **mean** (ie average)  value across all years and return the top 5 emitting countries._ 
 
-```{r read co2}
-library(dplyr)
-library(readxl) # install.packages('readxl')
 
-# xls downloaded from http://edgar.jrc.ec.europa.eu/news_docs/CO2_1970-2014_dataset_of_CO2_report_2015.xls
-xls = '../data/co2_europa.xls'
+```{r bbest, echo=F, eval=F}
+# setwd('~/github/bbest.github.io/env-info_hw')
+```
 
-print(getwd())
-co2 = read_excel(xls, skip=12)
+```{r read co2 & popn, eval=T}
+suppressPackageStartupMessages({
+  library(readr)
+  library(readxl) # install.packages('readxl')
+  library(dplyr)
+  library(tidyr)
+  library(httr)   # install.packages('httr')
+})
+
+# co2 Excel file
+url = 'http://edgar.jrc.ec.europa.eu/news_docs/CO2_1970-2014_dataset_of_CO2_report_2015.xls'
+xls = 'co2_europa.xls'
+if (!file.exists(xls)) writeBin(content(GET(url), 'raw'), xls)
+
+# read in carbon dioxide emissions file
+co2 = read_excel(xls, skip=12) %>%
+  gather(year, ktons_co2, -Country) %>%
+  filter(!Country %in% c('World','EU28') & !is.na(Country)) %>%
+  mutate(year = as.integer(as.character(year))) %>%
+  rename(country=Country)
 co2
+
+# read in population
+popn = read_csv('https://raw.githubusercontent.com/datasets/population/master/data/population.csv') %>%
+  select(country=`Country Name`, year=Year, popn=Value) 
+popn
 ```
 
-```{r popn}
-library(readr)
-library(tidyr)
+In order to calculate per capita emissions, you'll need to join the `popn` data frame with the `co2` data frame before calculating something like `ktons_co2 / popn`.
 
-popn = read_csv(
-  'https://raw.githubusercontent.com/datasets/population/master/data/population.csv')
+One of the trickiest parts about joining data is ensuring that values in the key columns are matching. The column `year` is a simple 4 digit integer in both tables (after converting to `as.integer()` for the gathered `co2`). But what about `country`?
+
+Let's look at just `year==2014` to see what values of `country` in table `co2` are not found in table `popn`, ie `anti_join()`:
+
+```{r co2$popn not in popn$country, eval=T}
+# co2$popn not in popn$country
+co2 %>%
+  filter(year==2014) %>%
+  anti_join(
+    popn %>%
+      filter(year==2014),
+    by='country') %>%
+  arrange(desc(ktons_co2))
 ```
+
+Whoah, we're missing 47 "countries", including the "United States of America"! So what is "United States of America" called in  `popn$country`?
+
+```{r popn$country not in co2$popn, eval=T}
+# popn$country not in co2$popn
+popn %>%
+  filter(year==2014) %>%
+  anti_join(
+    co2 %>%
+      filter(year==2014),
+    by='country') %>%
+  arrange(desc(country))
+```
+
+Ok, so in `popn$country` we have "United States" which doesn't get matched with "United States of America" in `co2$country`? How to fix this? We need a lookup table for translating country values between tables. I went ahead and made one for you by copying the two anti_join tables above and matching rows where possible.
+
+```{r cntry, eval=T}
+# get lookup table to translate popn$country to co2$country
+cntry = read_csv('https://raw.githubusercontent.com/ucsb-bren/env-info/gh-pages/data/co2_country_to_popn.csv')
+cntry
+```
+
+So before we join the tables `co2` and `popn`, first translate country in one to match the other.
+
+```{r update co2$country to popn$country, eval=T}
+# update co2$country to popn$country
+co2_m = co2 %>%
+  left_join(
+    cntry, 
+    # note use of named vector to columns with different names
+    by = c('country'='country_co2')) %>%    
+  mutate(
+    # note use of ifelse to upated country with popn$country_popn
+    country = ifelse(!is.na(country_popn), country_popn, country))
+
+# check that "United States of America" changed to "United States"
+co2_m %>%
+  filter(year==2014) %>%
+  arrange(desc(country)) %>%
+  head(15)
+```
+
+Ok, so `co2_m$country` got updated with values to match `popn$country`, eg "United States of America" to "United States".
+
+Please use this matching `co2_m` to join with `popn` and calculate per capita emissions.

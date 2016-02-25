@@ -133,17 +133,21 @@ The majority of exciting interactive application development is happening these 
 - [threejs](https://github.com/bwlewis/rthreejs): 3D scatterplots and globes
 - [DiagrammeR](http://rich-iannone.github.io/DiagrammeR/): Diagrams and flowcharts
 
+<a href="wk06_widgets/" class="btn btn-primary btn-sm">Interactive Plots...</a>
+
 ### 7. Advanced Programming
 
-#### Feb 19, 8-noon [NT]
+#### Feb 19, 8:30-11:30 [NT]. extra office hours: 11:30-12:30 [NT, BB]
 
 Developing more complex programs involves breaking data analysis down into key components - and organizing these components so that they can be easily re-used, modified and linked with other programs. We will introduce you to techniques for structured programming. You'll learn how to create your own [R package](http://r-pkgs.had.co.nz/intro.html).
 
 Two essential components of programming best practices are documentation and testing. Particularly when programming and data analysis involve multiple steps or collaborative programming, good documentation and testing are essential. We will introduce you to ways to help you to write documentation inline using [roxygen2](http://r-pkgs.had.co.nz/man.html) and ways to automate [testing](https://journal.r-project.org/archive/2011-1/RJournal_2011-1_Wickham.pdf) of your programs. 
 
+<a href="wk07_program2/" class="btn btn-primary btn-sm">Programming 2...</a>
+
 ### 8. Interactive Applications
 
-#### Feb 26, 8-noon [BB]
+#### Feb 26, 8:30-11:30 [BB]. extra office hours: 11:30-12:30 [NT, BB]
 
 Continuing with the online interactive theme, we'll explore the world of making [Shiny](http://shiny.rstudio.com/) apps for truly interactive applications that allow for backend R functions reactive to user inputs to a clean web interface easily rendered with the most minimal amount of code. See the [shiny cheat sheet](http://shiny.rstudio.com/images/shiny-cheatsheet.pdf).
 
@@ -155,7 +159,7 @@ Because of [Bren Group Project](http://www.bren.ucsb.edu/research/gp_submit.html
 
 ### 10. Final Project Presentations
 
-#### Mar 11, 8-noon
+#### Mar 11, 8:30-noon
 
 You'll share your final project presentations in class, describing the scientific question asked, methodological steps taken to gather and clean data, analytical steps and visualizations. This will be done with an Rmarkdown presentation having a Shiny app embedded with all code made available on a Github repository (ie at your group's org.github.io site).
 

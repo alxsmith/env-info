@@ -167,10 +167,11 @@ img {
 <li>Herman Strop <span class="citation">@FrissAnalytics</span> (FrissAnalytics)</li>
 </ul>
 <div class="figure">
-<img src="wk05_ggplot/img/rstudio_shinydevcon_wch-hadley-jcheng5-FrissAnalytics.JPG" />
+<img src="wk05_ggplot/img/rstudio_shinydevcon_wch-hadley-jcheng5-FrissAnalytics.JPG" alt="" />
+
 </div>
 <p>Brought some of these stickers for ya:</p>
-<p><a href="https://www.rstudio.com/about/gear/"><img src="wk05_ggplot/img/rstudio_stickers.png" /></a></p>
+<p><a href="https://www.rstudio.com/about/gear/"><img src="wk05_ggplot/img/rstudio_stickers.png" alt="" /></a></p>
 </div>
 <div id="rstudio-shortcuts" class="section level3">
 <h3>RStudio Shortcuts</h3>
@@ -182,7 +183,7 @@ img {
 <li>Insert <code>%&gt;%</code>: Ctrl+Shift+<strong>M</strong> (Win), Cmd+Shift+<strong>M</strong> (Mac)</li>
 <li>Attempt completion: <strong>Tab</strong> or Ctrl+Space (Win), <strong>Tab</strong> or Cmd+Space (Mac),</li>
 <li>Knit Document: Ctrl+Shift+<strong>K</strong> (Win), Cmd+Shift+<strong>K</strong> (Mac)</li>
-<li>Copy Lines Up/Down: Shift+Alt+<strong><span class="math">\(\uparrow\)</span></strong>/<strong><span class="math">\(\downarrow\)</span></strong> (Win), Cmd+Option+<strong><span class="math">\(\uparrow\)</span></strong>/<strong><span class="math">\(\downarrow\)</span></strong> (Mac)</li>
+<li>Copy Lines Up/Down: Shift+Alt+<strong><span class="math inline">\(\uparrow\)</span></strong>/<strong><span class="math inline">\(\downarrow\)</span></strong> (Win), Cmd+Option+<strong><span class="math inline">\(\uparrow\)</span></strong>/<strong><span class="math inline">\(\downarrow\)</span></strong> (Mac)</li>
 </ul></li>
 </ul>
 </div>
@@ -191,7 +192,14 @@ img {
 <div id="old" class="section level4">
 <h4>OLD</h4>
 <p>So far to turn in individual assignments, you’ve been editing <code>env-info/students/&lt;user&gt;.Rmd</code> and knitting to <code>env-info/students/&lt;user&gt;.html</code>. Then you push to your repo <code>&lt;user&gt;/env-info</code> before submitting to the course repo <code>ucsb-bren/env-info</code> with a push, and pull request. To update your <code>&lt;user&gt;/env-info</code> with the latest from <code>ucsb-bren/env-info</code>, you also need to do an additional pull request, merge, and pull.</p>
-<table>
+<table style="width:94%;">
+<colgroup>
+<col width="16%" />
+<col width="19%" />
+<col width="19%" />
+<col width="19%" />
+<col width="19%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">repo location</th>
@@ -207,7 +215,6 @@ img {
 <td align="center">read only</td>
 <td align="center"></td>
 <td align="center"><a href="https://help.github.com/articles/merging-a-pull-request"><strong>merge</strong></a> <span class="octicon octicon-git-merge"></span> [BB]</td>
-<td align="center"></td>
 </tr>
 <tr class="even">
 <td align="left"><i class="fa fa-cloud"></i> <code>github.com/&lt;user&gt;/env-info</code></td>
@@ -229,7 +236,14 @@ img {
 <div id="new" class="section level4">
 <h4>NEW</h4>
 <p>For future assignments, you’ll use a much simpler Github workflow with less possibilities for <a href="http://r-pkgs.had.co.nz/git.html#git-pull">merge conflicts</a>:</p>
-<table>
+<table style="width:94%;">
+<colgroup>
+<col width="16%" />
+<col width="19%" />
+<col width="19%" />
+<col width="19%" />
+<col width="19%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">repo location</th>
@@ -244,7 +258,6 @@ img {
 <td align="left"><i class="fa fa-cloud"></i> <code>github.com/&lt;user&gt;/&lt;user&gt;.github.io</code></td>
 <td align="center">read + write</td>
 <td align="center"><a href="https://help.github.com/articles/create-a-repo/"><strong>create</strong></a> <span class="octicon octicon-plus"></span></td>
-<td align="center"></td>
 <td align="center"></td>
 </tr>
 <tr class="even">
@@ -275,7 +288,7 @@ img {
 </div>
 <div id="joining-data" class="section level2">
 <h2>joining data</h2>
-<p>For this portion of the individual assignment, similar to last week, you’ll find it easiest to copy and paste from <code>## joining data</code> onwards in <a href="https://raw.githubusercontent.com/ucsb-bren/env-info/gh-pages/wk05_joining.Rmd"><code>env-info/wk05_joining.Rmd</code></a> to your <code>env-info_hw/wk05_ggplot.Rmd</code>. Then you can play with different chunks of the code. Please be sure to answer all tasks and questions at the bottom.</p>
+<p>For this portion of the individual assignment, similar to last week, you’ll find it easiest to copy and paste from <code>## joining data</code> onwards in <a href="https://raw.githubusercontent.com/ucsb-bren/env-info/gh-pages/wk05_joining.Rmd"><code>env-info/wk05_joining.Rmd</code></a> to your <code>&lt;user&gt;.github.io/env-info_hw/wk05_ggplot.Rmd</code>. Then you can play with different chunks of the code. Please be sure to answer all tasks and questions at the bottom.</p>
 <p>The R chunks explaining the <code>dplyr</code> join functions below are pulled from the excellent <a href="wk03_dplyr/wrangling-webinar.pdf"><strong>wrangling-webinar.pdf</strong></a> presentation, which you should consult as you execute (see shortcuts in <a href="refs/cheatsheets/rstudio-IDE-cheatsheet.pdf">rstudio-IDE-cheatsheet.pdf</a>).</p>
 <div id="setup" class="section level3">
 <h3>setup</h3>
@@ -294,85 +307,255 @@ if (basename(getwd()) != wd){
 </div>
 <div id="bind_cols" class="section level3">
 <h3><code>bind_cols</code></h3>
-<pre class="r"><code>y = data.frame(
-  x1 = c(&#39;A&#39;,&#39;B&#39;,&#39;C&#39;), 
-  x2 = c( 1 , 2 , 3), 
-  stringsAsFactors=F)
-z = data.frame(
-  x1 = c(&#39;B&#39;,&#39;C&#39;,&#39;D&#39;), 
-  x2 = c( 2 , 3 , 4), 
-  stringsAsFactors=F)
+<p>bind columns between data frames</p>
+<pre class="r"><code>library(readr)
+library(dplyr)
+
+y = read_csv(
+&#39;x1,x2
+A,1
+B,2
+C,3&#39;)
+z = read_csv(
+&#39;x1,x2
+B,2
+C,3
+D,4&#39;)
 y
 z
 bind_cols(y, z)</code></pre>
 </div>
 <div id="bind_rows" class="section level3">
 <h3><code>bind_rows</code></h3>
+<p>bind rows of data frames</p>
 <pre class="r"><code>y
 z
 bind_rows(y, z)</code></pre>
 </div>
 <div id="union" class="section level3">
 <h3><code>union</code></h3>
+<p>set operation on data frames, returning all unique rows</p>
 <pre class="r"><code>y
 z
 union(y, z)</code></pre>
 </div>
 <div id="intersect" class="section level3">
 <h3><code>intersect</code></h3>
+<p>set operation on data frames, returning those rows in common</p>
 <pre class="r"><code>y
 z
 intersect(y, z)</code></pre>
 </div>
 <div id="setdiff" class="section level3">
 <h3><code>setdiff</code></h3>
+<p>set operation on data frames, returning all mismatched rows</p>
 <pre class="r"><code>y
 z
 setdiff(y, z)</code></pre>
 </div>
 <div id="left_join" class="section level3">
 <h3><code>left_join</code></h3>
-<pre class="r"><code>songs = data.frame(
-  song = c(&#39;Across the Universe&#39;,&#39;Come Together&#39;, &#39;Hello, Goodbye&#39;, &#39;Peggy Sue&#39;),
-  name = c(&#39;John&#39;,&#39;John&#39;,&#39;Paul&#39;,&#39;Buddy&#39;), 
-  stringsAsFactors=F)
-artists = data.frame(
-  name = c(&#39;George&#39;,&#39;John&#39;,&#39;Paul&#39;,&#39;Ringo&#39;),
-  plays = c(&#39;sitar&#39;,&#39;guitar&#39;,&#39;bass&#39;,&#39;drums&#39;), 
-  stringsAsFactors=F)
+<p>return all rows from x, and all columns from x and y. Rows in x with no match in y will have NA values in the new columns.</p>
+<pre class="r"><code>artists = read_csv(
+&#39;name,plays
+George,sitar
+John,guitar
+Paul,bass
+Ringo,drums&#39;)
+songs = read_csv(
+&#39;song,name
+Across the Universe,John
+Come Together,John
+&quot;Hello, Goodbye&quot;,Paul
+Peggy Sue,Buddy&#39;)
+artists
+songs
 left_join(songs, artists, by=&#39;name&#39;)</code></pre>
 </div>
 <div id="inner_join" class="section level3">
 <h3><code>inner_join</code></h3>
+<p>return all rows from x where there are matching values in y, and all columns from x and y</p>
 <pre class="r"><code>inner_join(songs, artists, by = &quot;name&quot;)</code></pre>
 </div>
 <div id="semi_join" class="section level3">
 <h3><code>semi_join</code></h3>
+<p>return all rows from x where there are matching values in y, keeping just columns from x</p>
 <pre class="r"><code>semi_join(songs, artists, by = &quot;name&quot;)</code></pre>
 </div>
 <div id="anti_join" class="section level3">
 <h3><code>anti_join</code></h3>
+<p>return all rows from x where there are not matching values in y, keeping just columns from x</p>
 <pre class="r"><code>anti_join(songs, artists, by = &quot;name&quot;)</code></pre>
 </div>
 <div id="per-capita-co2-emissions" class="section level3">
 <h3>per capita CO<sub>2</sub> emissions</h3>
 <p>You’ll join the <a href="http://data.okfn.org/data/core/population">population</a> dataset to calculate per capita CO<sub>2</sub> emissions.</p>
-<p><em><strong>Task</strong>. Summarize the total emissions by country (not World or EU28) per capita across years from your long format table and return the top 5 emitting countries for <strong>2014</strong>.</em></p>
-<p><em><strong>Task</strong>. Summarize the total emissions by country (not World or EU28) per capita across years from your long format table and return the top 5 emitting countries on <strong>average</strong> across all years.</em></p>
-<pre class="r"><code>library(dplyr)
-library(readxl) # install.packages(&#39;readxl&#39;)
+<p><em><strong>Task</strong>. Calculate the per capita emissions by country (not World or EU28) and return the top 5 emitting countries for <strong>2014</strong>.</em></p>
+<p><em><strong>Task</strong>. Summarize the per capita emissions by country (not World or EU28) as the <strong>mean</strong> (ie average) value across all years and return the top 5 emitting countries.</em></p>
+<pre class="r"><code>suppressPackageStartupMessages({
+  library(readr)
+  library(readxl) # install.packages(&#39;readxl&#39;)
+  library(dplyr)
+  library(tidyr)
+  library(httr)   # install.packages(&#39;httr&#39;)
+})
 
-# xls downloaded from http://edgar.jrc.ec.europa.eu/news_docs/CO2_1970-2014_dataset_of_CO2_report_2015.xls
-xls = &#39;../data/co2_europa.xls&#39;
+# co2 Excel file
+url = &#39;http://edgar.jrc.ec.europa.eu/news_docs/CO2_1970-2014_dataset_of_CO2_report_2015.xls&#39;
+xls = &#39;co2_europa.xls&#39;
+if (!file.exists(xls)) writeBin(content(GET(url), &#39;raw&#39;), xls)
 
-print(getwd())
-co2 = read_excel(xls, skip=12)
-co2</code></pre>
-<pre class="r"><code>library(readr)
-library(tidyr)
+# read in carbon dioxide emissions file
+co2 = read_excel(xls, skip=12) %&gt;%
+  gather(year, ktons_co2, -Country) %&gt;%
+  filter(!Country %in% c(&#39;World&#39;,&#39;EU28&#39;) &amp; !is.na(Country)) %&gt;%
+  mutate(year = as.integer(as.character(year))) %&gt;%
+  rename(country=Country)</code></pre>
+<pre><code>## DEFINEDNAME: 21 00 00 01 0b 00 00 00 01 00 00 00 00 00 00 0d 3b 00 00 0c 00 e0 00 00 00 2c 00 
+## DEFINEDNAME: 21 00 00 01 0b 00 00 00 01 00 00 00 00 00 00 0d 3b 00 00 0c 00 e0 00 00 00 2c 00 
+## DEFINEDNAME: 21 00 00 01 0b 00 00 00 01 00 00 00 00 00 00 0d 3b 00 00 0c 00 e0 00 00 00 2c 00 
+## DEFINEDNAME: 21 00 00 01 0b 00 00 00 01 00 00 00 00 00 00 0d 3b 00 00 0c 00 e0 00 00 00 2c 00</code></pre>
+<pre class="r"><code>co2</code></pre>
+<pre><code>## Source: local data frame [9,720 x 3]
+## 
+##                country  year    ktons_co2
+##                  (chr) (int)        (dbl)
+## 1          Afghanistan  1970  1813.981234
+## 2              Albania  1970  4435.433037
+## 3              Algeria  1970 18850.745443
+## 4       American Samoa  1970     6.183023
+## 5               Angola  1970  8946.495011
+## 6             Anguilla  1970     2.168006
+## 7  Antigua and Barbuda  1970   196.161773
+## 8            Argentina  1970 87478.401090
+## 9              Armenia  1970 10951.012839
+## 10               Aruba  1970    40.380782
+## ..                 ...   ...          ...</code></pre>
+<pre class="r"><code># read in population
+popn = read_csv(&#39;https://raw.githubusercontent.com/datasets/population/master/data/population.csv&#39;) %&gt;%
+  select(country=`Country Name`, year=Year, popn=Value) 
+popn</code></pre>
+<pre><code>## Source: local data frame [13,484 x 3]
+## 
+##       country  year      popn
+##         (chr) (int)     (dbl)
+## 1  Arab World  1960  93485943
+## 2  Arab World  1961  96058179
+## 3  Arab World  1962  98728995
+## 4  Arab World  1963 101496308
+## 5  Arab World  1964 104359772
+## 6  Arab World  1965 107318159
+## 7  Arab World  1966 110379639
+## 8  Arab World  1967 113543760
+## 9  Arab World  1968 116787194
+## 10 Arab World  1969 120078092
+## ..        ...   ...       ...</code></pre>
+<p>In order to calculate per capita emissions, you’ll need to join the <code>popn</code> data frame with the <code>co2</code> data frame before calculating something like <code>ktons_co2 / popn</code>.</p>
+<p>One of the trickiest parts about joining data is ensuring that values in the key columns are matching. The column <code>year</code> is a simple 4 digit integer in both tables (after converting to <code>as.integer()</code> for the gathered <code>co2</code>). But what about <code>country</code>?</p>
+<p>Let’s look at just <code>year==2014</code> to see what values of <code>country</code> in table <code>co2</code> are not found in table <code>popn</code>, ie <code>anti_join()</code>:</p>
+<pre class="r"><code># co2$popn not in popn$country
+co2 %&gt;%
+  filter(year==2014) %&gt;%
+  anti_join(
+    popn %&gt;%
+      filter(year==2014),
+    by=&#39;country&#39;) %&gt;%
+  arrange(desc(ktons_co2))</code></pre>
+<pre><code>## Source: local data frame [47 x 3]
+## 
+##                                  country  year  ktons_co2
+##                                    (chr) (int)      (dbl)
+## 1               United States of America  2014 5334529.74
+## 2                          Int. Shipping  2014  624493.37
+## 3             Iran (Islamic Republic of)  2014  618197.22
+## 4                      Republic of Korea  2014  610065.60
+## 5                          Int. Aviation  2014  492174.61
+## 6              China, Taiwan Province of  2014  276674.74
+## 7                                  Egypt  2014  225111.50
+## 8     Venezuela (Bolivarian Republic of)  2014  195212.97
+## 9                               Viet Nam  2014  190221.79
+## 10 Democratic People s Republic of Korea  2014   59858.59
+## ..                                   ...   ...        ...</code></pre>
+<p>Whoah, we’re missing 47 “countries”, including the “United States of America”! So what is “United States of America” called in <code>popn$country</code>?</p>
+<pre class="r"><code># popn$country not in co2$popn
+popn %&gt;%
+  filter(year==2014) %&gt;%
+  anti_join(
+    co2 %&gt;%
+      filter(year==2014),
+    by=&#39;country&#39;) %&gt;%
+  arrange(desc(country))</code></pre>
+<pre><code>## Source: local data frame [78 x 3]
+## 
+##                  country  year       popn
+##                    (chr) (int)      (dbl)
+## 1            Yemen, Rep.  2014   24968508
+## 2                  World  2014 7207735030
+## 3     West Bank and Gaza  2014    4294682
+## 4  Virgin Islands (U.S.)  2014     104170
+## 5                Vietnam  2014   90730000
+## 6          Venezuela, RB  2014   30851343
+## 7    Upper middle income  2014 2354905613
+## 8          United States  2014  318857056
+## 9               Tanzania  2014   50757459
+## 10                 Sudan  2014   38764090
+## ..                   ...   ...        ...</code></pre>
+<p>Ok, so in <code>popn$country</code> we have “United States” which doesn’t get matched with “United States of America” in <code>co2$country</code>? How to fix this? We need a lookup table for translating country values between tables. I went ahead and made one for you by copying the two anti_join tables above and matching rows where possible.</p>
+<pre class="r"><code># get lookup table to translate popn$country to co2$country
+cntry = read_csv(&#39;https://raw.githubusercontent.com/ucsb-bren/env-info/gh-pages/data/co2_country_to_popn.csv&#39;)
+cntry</code></pre>
+<pre><code>## Source: local data frame [28 x 2]
+## 
+##                         country_co2         country_popn
+##                               (chr)                (chr)
+## 1                           Bahamas         Bahamas, The
+## 2  Bolivia (Plurinational State of)              Bolivia
+## 3  Democratic Republic of the Congo     Congo, Dem. Rep.
+## 4                             Congo          Congo, Rep.
+## 5                  C\x99te d Ivoire        Cote d&#39;Ivoire
+## 6                             Egypt     Egypt, Arab Rep.
+## 7                     Faroe Islands       Faeroe Islands
+## 8                            Gambia          Gambia, The
+## 9              China, Hong Kong SAR Hong Kong SAR, China
+## 10       Iran (Islamic Republic of)   Iran, Islamic Rep.
+## ..                              ...                  ...</code></pre>
+<p>So before we join the tables <code>co2</code> and <code>popn</code>, first translate country in one to match the other.</p>
+<pre class="r"><code># update co2$country to popn$country
+co2_m = co2 %&gt;%
+  left_join(
+    cntry, 
+    # note use of named vector to columns with different names
+    by = c(&#39;country&#39;=&#39;country_co2&#39;)) %&gt;%    
+  mutate(
+    # note use of ifelse to upated country with popn$country_popn
+    country = ifelse(!is.na(country_popn), country_popn, country))
 
-popn = read_csv(
-  &#39;https://raw.githubusercontent.com/datasets/population/master/data/population.csv&#39;)</code></pre>
+# check that &quot;United States of America&quot; changed to &quot;United States&quot;
+co2_m %&gt;%
+  filter(year==2014) %&gt;%
+  arrange(desc(country)) %&gt;%
+  head(15)</code></pre>
+<pre><code>## Source: local data frame [15 x 4]
+## 
+##                  country  year    ktons_co2          country_popn
+##                    (chr) (int)        (dbl)                 (chr)
+## 1               Zimbabwe  2014 1.313540e+04                    NA
+## 2                 Zambia  2014 3.367057e+03                    NA
+## 3            Yemen, Rep.  2014 2.255319e+04           Yemen, Rep.
+## 4         Western Sahara  2014 2.074151e+02                    NA
+## 5  Virgin Islands (U.S.)  2014 1.489644e+00 Virgin Islands (U.S.)
+## 6                Vietnam  2014 1.902218e+05               Vietnam
+## 7          Venezuela, RB  2014 1.952130e+05         Venezuela, RB
+## 8                Vanuatu  2014 1.105213e+02                    NA
+## 9             Uzbekistan  2014 1.226212e+05                    NA
+## 10               Uruguay  2014 8.113994e+03                    NA
+## 11         United States  2014 5.334530e+06         United States
+## 12        United Kingdom  2014 4.154209e+05                    NA
+## 13  United Arab Emirates  2014 2.010522e+05                    NA
+## 14               Ukraine  2014 2.490653e+05                    NA
+## 15                Uganda  2014 4.891807e+03                    NA</code></pre>
+<p>Ok, so <code>co2_m$country</code> got updated with values to match <code>popn$country</code>, eg “United States of America” to “United States”.</p>
+<p>Please use this matching <code>co2_m</code> to join with <code>popn</code> and calculate per capita emissions.</p>
 </div>
 </div>
 
